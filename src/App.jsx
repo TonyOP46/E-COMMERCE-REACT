@@ -8,7 +8,7 @@ import MyNavbar from "./components/MyNavbar";
 import ProtectedRoutes from "./components/ProtectedRoutes";
 import Login from "./pages/Login";
 import ProductDetails from "./pages/ProductDetails";
-import Products from "./pages/products";
+import Products from "./pages/Products";
 import Purchases from "./pages/Purchases";
 import { getProductsThunk } from "./store/slice/Products.slice";
 

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Card, Col, Form, InputGroup, ListGroup, Row } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import '../App.css'
 
 const Products = () => {
   const products = useSelector((state) => state.products);
@@ -67,8 +68,8 @@ const Products = () => {
         <Row xs={1} md={2} xl={3} className="g-4">
           {productFiltered.map((product) => (
             <Col  key={product.id}>
-              <Card onClick={() => navigate(`/products/${product.id}`)} style={{height: "100%"}}>
-                <Card.Img variant="top" src={product.productImgs[1]} alt="" width={"100px"} height={"200px"} style={{objectFit: "contain"}}/>
+              <Card onClick={() => navigate(`/products/${product.id}`)} style={{height: "100%"}} className="cards">
+                <Card.Img variant="top" src={product.productImgs[1]} alt="" width={"100px"} height={"200px"} style={{objectFit: "contain"}} />
                 <Card.Body>
                   <Card.Title>{product.title}</Card.Title>
                   <Card.Text>
