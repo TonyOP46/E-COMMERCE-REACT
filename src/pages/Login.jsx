@@ -13,7 +13,7 @@ const Login = () => {
     console.log(data);
     axios
       .post(
-        "https://ecommerce-api-react.herokuapp.com/api/v1/users/login",
+        "https://e-commerce-api.academlo.tech/api/v1/users/login",
         data
       )
       .then((res) => {
@@ -37,10 +37,10 @@ const Login = () => {
         <div className="help">
           <h5>Test data</h5>
           <p>
-            <i class="fa-solid fa-envelope"></i> prueba@gmail.com
+            <i class="fa-solid fa-envelope"></i> max@gmail.com
           </p>
           <p>
-            <i class="fa-solid fa-lock"></i> prueba1234
+            <i class="fa-solid fa-lock"></i> pass1234
           </p>
         </div>
         <Form onSubmit={handleSubmit(submit)}>
